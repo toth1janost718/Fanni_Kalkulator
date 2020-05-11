@@ -14,7 +14,6 @@ C:\Users\totht\source\repos\Fanni_Kalkulator\Fanni_Kalkulator\obj\Debug\Fanni_Ka
 D:\Training\Fanni_Kalkulator\Fanni_Kalkulator\Fanni_Kalkulator\bin\Debug\Fanni_Kalkulator.exe.config
 D:\Training\Fanni_Kalkulator\Fanni_Kalkulator\Fanni_Kalkulator\bin\Debug\Fanni_Kalkulator.exe
 D:\Training\Fanni_Kalkulator\Fanni_Kalkulator\Fanni_Kalkulator\bin\Debug\Fanni_Kalkulator.pdb
-D:\Training\Fanni_Kalkulator\Fanni_Kalkulator\Fanni_Kalkulator\obj\Debug\Fanni_Kalkulator.csprojAssemblyReference.cache
 D:\Training\Fanni_Kalkulator\Fanni_Kalkulator\Fanni_Kalkulator\obj\Debug\Fanni_Kalkulator.AboutBox.resources
 D:\Training\Fanni_Kalkulator\Fanni_Kalkulator\Fanni_Kalkulator\obj\Debug\Fanni_Kalkulator.frmCaloria.resources
 D:\Training\Fanni_Kalkulator\Fanni_Kalkulator\Fanni_Kalkulator\obj\Debug\Fanni_Kalkulator.frWeightCalc.resources

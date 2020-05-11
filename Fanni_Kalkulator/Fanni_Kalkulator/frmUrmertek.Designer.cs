@@ -31,146 +31,194 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUrmertek));
             this.lbMennyiseg = new System.Windows.Forms.Label();
             this.lbMertekegyseg = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.tbMennyiseg = new System.Windows.Forms.TextBox();
+            this.cbMertekegyseg = new System.Windows.Forms.ComboBox();
             this.lbml = new System.Windows.Forms.Label();
             this.lbdl = new System.Windows.Forms.Label();
             this.lbl = new System.Windows.Forms.Label();
             this.lbcl = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tbml = new System.Windows.Forms.TextBox();
+            this.tbcl = new System.Windows.Forms.TextBox();
+            this.tbdl = new System.Windows.Forms.TextBox();
+            this.tbLiter = new System.Windows.Forms.TextBox();
             this.btnInditLiter = new System.Windows.Forms.Button();
+            this.btnResetMertek = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbMennyiseg
             // 
             this.lbMennyiseg.AutoSize = true;
-            this.lbMennyiseg.Location = new System.Drawing.Point(83, 32);
+            this.lbMennyiseg.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMennyiseg.Location = new System.Drawing.Point(111, 37);
+            this.lbMennyiseg.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbMennyiseg.Name = "lbMennyiseg";
-            this.lbMennyiseg.Size = new System.Drawing.Size(58, 13);
+            this.lbMennyiseg.Size = new System.Drawing.Size(76, 15);
             this.lbMennyiseg.TabIndex = 0;
             this.lbMennyiseg.Text = "Mennyiség";
             // 
             // lbMertekegyseg
             // 
             this.lbMertekegyseg.AutoSize = true;
-            this.lbMertekegyseg.Location = new System.Drawing.Point(234, 32);
+            this.lbMertekegyseg.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMertekegyseg.Location = new System.Drawing.Point(312, 37);
+            this.lbMertekegyseg.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbMertekegyseg.Name = "lbMertekegyseg";
-            this.lbMertekegyseg.Size = new System.Drawing.Size(74, 13);
+            this.lbMertekegyseg.Size = new System.Drawing.Size(98, 15);
             this.lbMertekegyseg.TabIndex = 1;
             this.lbMertekegyseg.Text = "Mértékegység";
             // 
-            // textBox1
+            // tbMennyiseg
             // 
-            this.textBox1.Location = new System.Drawing.Point(58, 68);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
+            this.tbMennyiseg.Location = new System.Drawing.Point(77, 78);
+            this.tbMennyiseg.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tbMennyiseg.Name = "tbMennyiseg";
+            this.tbMennyiseg.Size = new System.Drawing.Size(132, 23);
+            this.tbMennyiseg.TabIndex = 2;
+            this.tbMennyiseg.TextChanged += new System.EventHandler(this.tbMennyiseg_TextChanged);
+            this.tbMennyiseg.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbMennyiseg_KeyPress);
             // 
-            // comboBox1
+            // cbMertekegyseg
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(213, 67);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 3;
+            this.cbMertekegyseg.FormattingEnabled = true;
+            this.cbMertekegyseg.Items.AddRange(new object[] {
+            "ml",
+            "cl",
+            "dl",
+            "l"});
+            this.cbMertekegyseg.Location = new System.Drawing.Point(284, 77);
+            this.cbMertekegyseg.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.cbMertekegyseg.Name = "cbMertekegyseg";
+            this.cbMertekegyseg.Size = new System.Drawing.Size(160, 23);
+            this.cbMertekegyseg.TabIndex = 3;
             // 
             // lbml
             // 
             this.lbml.AutoSize = true;
-            this.lbml.Location = new System.Drawing.Point(55, 152);
+            this.lbml.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbml.Location = new System.Drawing.Point(73, 175);
+            this.lbml.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbml.Name = "lbml";
-            this.lbml.Size = new System.Drawing.Size(57, 13);
+            this.lbml.Size = new System.Drawing.Size(86, 15);
             this.lbml.TabIndex = 4;
             this.lbml.Text = "Mililiter (ml)";
             // 
             // lbdl
             // 
             this.lbdl.AutoSize = true;
-            this.lbdl.Location = new System.Drawing.Point(299, 189);
+            this.lbdl.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbdl.Location = new System.Drawing.Point(399, 218);
+            this.lbdl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbdl.Name = "lbdl";
-            this.lbdl.Size = new System.Drawing.Size(62, 13);
+            this.lbdl.Size = new System.Drawing.Size(89, 15);
             this.lbdl.TabIndex = 5;
             this.lbdl.Text = "Deciliter (dl)";
             // 
             // lbl
             // 
             this.lbl.AutoSize = true;
-            this.lbl.Location = new System.Drawing.Point(443, 193);
+            this.lbl.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl.Location = new System.Drawing.Point(591, 223);
+            this.lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(38, 13);
+            this.lbl.Size = new System.Drawing.Size(55, 15);
             this.lbl.TabIndex = 6;
             this.lbl.Text = "Liter (l)";
             // 
             // lbcl
             // 
             this.lbcl.AutoSize = true;
-            this.lbcl.Location = new System.Drawing.Point(195, 152);
+            this.lbcl.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbcl.Location = new System.Drawing.Point(241, 175);
+            this.lbcl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbcl.Name = "lbcl";
-            this.lbcl.Size = new System.Drawing.Size(64, 13);
+            this.lbcl.Size = new System.Drawing.Size(94, 15);
             this.lbcl.TabIndex = 7;
             this.lbcl.Text = "Centiliter (cl)";
             // 
-            // textBox2
+            // tbml
             // 
-            this.textBox2.Location = new System.Drawing.Point(27, 186);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 8;
+            this.tbml.Location = new System.Drawing.Point(36, 215);
+            this.tbml.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tbml.Name = "tbml";
+            this.tbml.ReadOnly = true;
+            this.tbml.Size = new System.Drawing.Size(132, 23);
+            this.tbml.TabIndex = 8;
             // 
-            // textBox3
+            // tbcl
             // 
-            this.textBox3.Location = new System.Drawing.Point(158, 186);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 9;
+            this.tbcl.Location = new System.Drawing.Point(211, 215);
+            this.tbcl.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tbcl.Name = "tbcl";
+            this.tbcl.ReadOnly = true;
+            this.tbcl.Size = new System.Drawing.Size(132, 23);
+            this.tbcl.TabIndex = 9;
             // 
-            // textBox4
+            // tbdl
             // 
-            this.textBox4.Location = new System.Drawing.Point(271, 231);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 10;
+            this.tbdl.Location = new System.Drawing.Point(361, 267);
+            this.tbdl.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tbdl.Name = "tbdl";
+            this.tbdl.ReadOnly = true;
+            this.tbdl.Size = new System.Drawing.Size(132, 23);
+            this.tbdl.TabIndex = 10;
             // 
-            // textBox5
+            // tbLiter
             // 
-            this.textBox5.Location = new System.Drawing.Point(409, 231);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 11;
+            this.tbLiter.Location = new System.Drawing.Point(545, 267);
+            this.tbLiter.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tbLiter.Name = "tbLiter";
+            this.tbLiter.ReadOnly = true;
+            this.tbLiter.Size = new System.Drawing.Size(132, 23);
+            this.tbLiter.TabIndex = 11;
             // 
             // btnInditLiter
             // 
-            this.btnInditLiter.Location = new System.Drawing.Point(409, 54);
+            this.btnInditLiter.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnInditLiter.Location = new System.Drawing.Point(545, 62);
+            this.btnInditLiter.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnInditLiter.Name = "btnInditLiter";
-            this.btnInditLiter.Size = new System.Drawing.Size(88, 66);
+            this.btnInditLiter.Size = new System.Drawing.Size(117, 76);
             this.btnInditLiter.TabIndex = 12;
             this.btnInditLiter.Text = "Indít";
-            this.btnInditLiter.UseVisualStyleBackColor = true;
+            this.btnInditLiter.UseVisualStyleBackColor = false;
+            this.btnInditLiter.Click += new System.EventHandler(this.btnInditLiter_Click);
+            // 
+            // btnResetMertek
+            // 
+            this.btnResetMertek.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnResetMertek.Location = new System.Drawing.Point(-1, 1);
+            this.btnResetMertek.Name = "btnResetMertek";
+            this.btnResetMertek.Size = new System.Drawing.Size(75, 23);
+            this.btnResetMertek.TabIndex = 13;
+            this.btnResetMertek.Text = "Reset";
+            this.btnResetMertek.UseVisualStyleBackColor = false;
+            this.btnResetMertek.Click += new System.EventHandler(this.btnResetMertek_Click);
             // 
             // frmUrmertek
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(533, 314);
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ClientSize = new System.Drawing.Size(711, 362);
+            this.Controls.Add(this.btnResetMertek);
             this.Controls.Add(this.btnInditLiter);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbLiter);
+            this.Controls.Add(this.tbdl);
+            this.Controls.Add(this.tbcl);
+            this.Controls.Add(this.tbml);
             this.Controls.Add(this.lbcl);
             this.Controls.Add(this.lbl);
             this.Controls.Add(this.lbdl);
             this.Controls.Add(this.lbml);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cbMertekegyseg);
+            this.Controls.Add(this.tbMennyiseg);
             this.Controls.Add(this.lbMertekegyseg);
             this.Controls.Add(this.lbMennyiseg);
+            this.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
             this.Name = "frmUrmertek";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -184,16 +232,17 @@
 
         private System.Windows.Forms.Label lbMennyiseg;
         private System.Windows.Forms.Label lbMertekegyseg;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox tbMennyiseg;
+        private System.Windows.Forms.ComboBox cbMertekegyseg;
         private System.Windows.Forms.Label lbml;
         private System.Windows.Forms.Label lbdl;
         private System.Windows.Forms.Label lbl;
         private System.Windows.Forms.Label lbcl;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tbml;
+        private System.Windows.Forms.TextBox tbcl;
+        private System.Windows.Forms.TextBox tbdl;
+        private System.Windows.Forms.TextBox tbLiter;
         private System.Windows.Forms.Button btnInditLiter;
+        private System.Windows.Forms.Button btnResetMertek;
     }
 }
