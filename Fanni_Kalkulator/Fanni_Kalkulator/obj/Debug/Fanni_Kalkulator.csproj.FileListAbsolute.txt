@@ -1,0 +1,13 @@
+C:\Users\totht\source\repos\Fanni_Kalkulator\Fanni_Kalkulator\bin\Debug\Fanni_Kalkulator.exe.config
+C:\Users\totht\source\repos\Fanni_Kalkulator\Fanni_Kalkulator\bin\Debug\Fanni_Kalkulator.exe
+C:\Users\totht\source\repos\Fanni_Kalkulator\Fanni_Kalkulator\bin\Debug\Fanni_Kalkulator.pdb
+C:\Users\totht\source\repos\Fanni_Kalkulator\Fanni_Kalkulator\obj\Debug\Fanni_Kalkulator.csprojAssemblyReference.cache
+C:\Users\totht\source\repos\Fanni_Kalkulator\Fanni_Kalkulator\obj\Debug\Fanni_Kalkulator.fFanniForm.resources
+C:\Users\totht\source\repos\Fanni_Kalkulator\Fanni_Kalkulator\obj\Debug\Fanni_Kalkulator.Properties.Resources.resources
+C:\Users\totht\source\repos\Fanni_Kalkulator\Fanni_Kalkulator\obj\Debug\Fanni_Kalkulator.csproj.GenerateResource.cache
+C:\Users\totht\source\repos\Fanni_Kalkulator\Fanni_Kalkulator\obj\Debug\Fanni_Kalkulator.csproj.CoreCompileInputs.cache
+C:\Users\totht\source\repos\Fanni_Kalkulator\Fanni_Kalkulator\obj\Debug\Fanni_Kalkulator.exe
+C:\Users\totht\source\repos\Fanni_Kalkulator\Fanni_Kalkulator\obj\Debug\Fanni_Kalkulator.pdb
+C:\Users\totht\source\repos\Fanni_Kalkulator\Fanni_Kalkulator\obj\Debug\Fanni_Kalkulator.AboutBox.resources
+C:\Users\totht\source\repos\Fanni_Kalkulator\Fanni_Kalkulator\obj\Debug\Fanni_Kalkulator.frWeightCalc.resources
+C:\Users\totht\source\repos\Fanni_Kalkulator\Fanni_Kalkulator\obj\Debug\Fanni_Kalkulator.frmCaloria.resources
