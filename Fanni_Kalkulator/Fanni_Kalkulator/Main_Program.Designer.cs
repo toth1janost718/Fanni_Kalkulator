@@ -35,6 +35,8 @@
             this.tsmKalkulator = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmWeightCalc = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmCaloriaCalc = new System.Windows.Forms.ToolStripMenuItem();
+            this.ChKalkulator = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmurmertekCalculator = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmKapcsolat = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmNevjegy = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -65,7 +67,7 @@
             // 
             this.tsmExit.CheckOnClick = true;
             this.tsmExit.Name = "tsmExit";
-            this.tsmExit.Size = new System.Drawing.Size(180, 22);
+            this.tsmExit.Size = new System.Drawing.Size(111, 22);
             this.tsmExit.Text = "Kilépés";
             this.tsmExit.Click += new System.EventHandler(this.tsmExit_Click);
             // 
@@ -73,7 +75,9 @@
             // 
             this.tsmKalkulator.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmWeightCalc,
-            this.tsmCaloriaCalc});
+            this.tsmCaloriaCalc,
+            this.ChKalkulator,
+            this.tsmurmertekCalculator});
             this.tsmKalkulator.Name = "tsmKalkulator";
             this.tsmKalkulator.Size = new System.Drawing.Size(72, 20);
             this.tsmKalkulator.Text = "Kalkulátor";
@@ -81,16 +85,30 @@
             // tsmWeightCalc
             // 
             this.tsmWeightCalc.Name = "tsmWeightCalc";
-            this.tsmWeightCalc.Size = new System.Drawing.Size(180, 22);
+            this.tsmWeightCalc.Size = new System.Drawing.Size(184, 22);
             this.tsmWeightCalc.Text = "Súlykalkulátor";
             this.tsmWeightCalc.Click += new System.EventHandler(this.tsmWeightCalc_Click);
             // 
             // tsmCaloriaCalc
             // 
             this.tsmCaloriaCalc.Name = "tsmCaloriaCalc";
-            this.tsmCaloriaCalc.Size = new System.Drawing.Size(180, 22);
+            this.tsmCaloriaCalc.Size = new System.Drawing.Size(184, 22);
             this.tsmCaloriaCalc.Text = "Kalória kalkulátor";
             this.tsmCaloriaCalc.Click += new System.EventHandler(this.tsmCaloriaCalc_Click);
+            // 
+            // ChKalkulator
+            // 
+            this.ChKalkulator.Name = "ChKalkulator";
+            this.ChKalkulator.Size = new System.Drawing.Size(184, 22);
+            this.ChKalkulator.Text = "Szénhidrát kalkulátor";
+            this.ChKalkulator.Click += new System.EventHandler(this.ChKalkulator_Click);
+            // 
+            // tsmurmertekCalculator
+            // 
+            this.tsmurmertekCalculator.Name = "tsmurmertekCalculator";
+            this.tsmurmertekCalculator.Size = new System.Drawing.Size(184, 22);
+            this.tsmurmertekCalculator.Text = "Űrmérték kalkulátor";
+            this.tsmurmertekCalculator.Click += new System.EventHandler(this.tsmurmertekCalculator_Click);
             // 
             // tsmKapcsolat
             // 
@@ -104,7 +122,7 @@
             // tsmNevjegy
             // 
             this.tsmNevjegy.Name = "tsmNevjegy";
-            this.tsmNevjegy.Size = new System.Drawing.Size(180, 22);
+            this.tsmNevjegy.Size = new System.Drawing.Size(117, 22);
             this.tsmNevjegy.Text = "Névjegy";
             this.tsmNevjegy.Click += new System.EventHandler(this.tsmNevjegy_Click);
             // 
@@ -138,6 +156,8 @@
         private System.Windows.Forms.ToolStripMenuItem tsmCaloriaCalc;
         private System.Windows.Forms.ToolStripMenuItem tsmKapcsolat;
         private System.Windows.Forms.ToolStripMenuItem tsmNevjegy;
+        private System.Windows.Forms.ToolStripMenuItem ChKalkulator;
+        private System.Windows.Forms.ToolStripMenuItem tsmurmertekCalculator;
     }
 }
 

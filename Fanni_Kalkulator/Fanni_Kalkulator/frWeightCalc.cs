@@ -82,15 +82,21 @@ namespace Fanni_Kalkulator
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            tbReadSource = textBox1.Text;
-            tbReadDouble = double.Parse(tbReadSource);
+            try {
+                tbReadSource = textBox1.Text;
+                tbReadDouble = double.Parse(tbReadSource);
+            }catch(Exception ex)
+            {
+                MessageBox.Show("Csak egész számot tudsz megadni!", "Tájékoztatás", MessageBoxButtons.OK);
+            }
+            
 
             
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
++
 
             value = comboBox1.SelectedIndex.ToString();
             number = int.Parse(value);

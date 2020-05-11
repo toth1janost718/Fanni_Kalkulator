@@ -84,9 +84,17 @@ namespace Fanni_Kalkulator
 
         private void btnCaloria_Click(object sender, EventArgs e)
         {
-            tbReadRandomString = tbGrammAdott.Text;
-            tbReadRandom = float.Parse(tbReadRandomString);
-            tbKaloria.Text =  (GrammCaloriaResult*tbReadRandom).ToString();
+            try
+            {
+                tbReadRandomString = tbGrammAdott.Text;
+                tbReadRandom = float.Parse(tbReadRandomString);
+                tbKaloria.Text = (GrammCaloriaResult * tbReadRandom).ToString();
+            }
+            catch (Exception ex) {
+
+                MessageBox.Show("Adatot meg kell adni mindenképpen", "Tájékoztatás", MessageBoxButtons.OK);
+            }
+            
         }
 
         private void tbGrammAdott_KeyPress(object sender, KeyPressEventArgs e)

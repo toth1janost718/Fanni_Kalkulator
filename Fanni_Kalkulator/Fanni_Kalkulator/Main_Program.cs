@@ -40,5 +40,17 @@ namespace Fanni_Kalkulator
             frmCaloria caloria = new frmCaloria();
             caloria.ShowDialog();
         }
+
+        private void ChKalkulator_Click(object sender, EventArgs e)
+        {
+            CHForm cH = new CHForm();
+            cH.ShowDialog();
+        }
+
+        private void tsmurmertekCalculator_Click(object sender, EventArgs e)
+        {
+            frmUrmertek urmertek = new frmUrmertek();
+            urmertek.ShowDialog();
+        }
     }
 }

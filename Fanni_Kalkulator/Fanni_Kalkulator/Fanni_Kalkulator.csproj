@@ -58,6 +58,12 @@
     <Compile Include="Caloria.Designer.cs">
       <DependentUpon>Caloria.cs</DependentUpon>
     </Compile>
+    <Compile Include="CHForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHForm.Designer.cs">
+      <DependentUpon>CHForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="frWeightCalc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,11 +78,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmUrmertek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUrmertek.Designer.cs">
+      <DependentUpon>frmUrmertek.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Caloria.resx">
       <DependentUpon>Caloria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHForm.resx">
+      <DependentUpon>CHForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUrmertek.resx">
+      <DependentUpon>frmUrmertek.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frWeightCalc.resx">
       <DependentUpon>frWeightCalc.cs</DependentUpon>
