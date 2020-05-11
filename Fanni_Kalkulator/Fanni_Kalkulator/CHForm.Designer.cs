@@ -41,7 +41,7 @@
             this.lb1ch = new System.Windows.Forms.Label();
             this.lb100ch = new System.Windows.Forms.Label();
             this.lb10ch = new System.Windows.Forms.Label();
-            this.tbCh = new System.Windows.Forms.TextBox();
+            this.tbCaloriaCH = new System.Windows.Forms.TextBox();
             this.tbGrammCh = new System.Windows.Forms.TextBox();
             this.tb10gCH = new System.Windows.Forms.TextBox();
             this.tb100gCh = new System.Windows.Forms.TextBox();
@@ -53,29 +53,32 @@
             // lbCHEntry
             // 
             this.lbCHEntry.AutoSize = true;
+            this.lbCHEntry.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCHEntry.Location = new System.Drawing.Point(44, 36);
             this.lbCHEntry.Name = "lbCHEntry";
-            this.lbCHEntry.Size = new System.Drawing.Size(57, 13);
+            this.lbCHEntry.Size = new System.Drawing.Size(78, 15);
             this.lbCHEntry.TabIndex = 0;
             this.lbCHEntry.Text = "Szénhidrát";
             // 
             // lbgrammCH
             // 
             this.lbgrammCH.AutoSize = true;
+            this.lbgrammCH.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbgrammCH.Location = new System.Drawing.Point(223, 36);
             this.lbgrammCH.Name = "lbgrammCH";
-            this.lbgrammCH.Size = new System.Drawing.Size(40, 13);
+            this.lbgrammCH.Size = new System.Drawing.Size(55, 15);
             this.lbgrammCH.TabIndex = 1;
             this.lbgrammCH.Text = "Gramm";
             // 
             // btStartCh1
             // 
+            this.btStartCh1.BackColor = System.Drawing.Color.LimeGreen;
             this.btStartCh1.Location = new System.Drawing.Point(364, 43);
             this.btStartCh1.Name = "btStartCh1";
             this.btStartCh1.Size = new System.Drawing.Size(75, 50);
             this.btStartCh1.TabIndex = 2;
             this.btStartCh1.Text = "Start";
-            this.btStartCh1.UseVisualStyleBackColor = true;
+            this.btStartCh1.UseVisualStyleBackColor = false;
             this.btStartCh1.Click += new System.EventHandler(this.btStartCh1_Click);
             // 
             // gbCH
@@ -93,15 +96,15 @@
             // 
             // tbRandomChgramm
             // 
-            this.tbRandomChgramm.Location = new System.Drawing.Point(303, 60);
+            this.tbRandomChgramm.Location = new System.Drawing.Point(139, 106);
             this.tbRandomChgramm.Name = "tbRandomChgramm";
             this.tbRandomChgramm.ReadOnly = true;
-            this.tbRandomChgramm.Size = new System.Drawing.Size(100, 20);
+            this.tbRandomChgramm.Size = new System.Drawing.Size(91, 20);
             this.tbRandomChgramm.TabIndex = 9;
             // 
             // tbRandomCh
             // 
-            this.tbRandomCh.Location = new System.Drawing.Point(103, 60);
+            this.tbRandomCh.Location = new System.Drawing.Point(139, 63);
             this.tbRandomCh.Name = "tbRandomCh";
             this.tbRandomCh.Size = new System.Drawing.Size(91, 20);
             this.tbRandomCh.TabIndex = 10;
@@ -111,65 +114,72 @@
             // label10CH
             // 
             this.label10CH.AutoSize = true;
-            this.label10CH.Location = new System.Drawing.Point(234, 63);
+            this.label10CH.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10CH.Location = new System.Drawing.Point(11, 111);
             this.label10CH.Name = "label10CH";
-            this.label10CH.Size = new System.Drawing.Size(63, 13);
+            this.label10CH.Size = new System.Drawing.Size(85, 15);
             this.label10CH.TabIndex = 2;
             this.label10CH.Text = "Szénhidrát :";
             // 
             // lbAdottCh
             // 
             this.lbAdottCh.AutoSize = true;
+            this.lbAdottCh.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAdottCh.Location = new System.Drawing.Point(6, 63);
             this.lbAdottCh.Name = "lbAdottCh";
-            this.lbAdottCh.Size = new System.Drawing.Size(91, 13);
+            this.lbAdottCh.Size = new System.Drawing.Size(122, 15);
             this.lbAdottCh.TabIndex = 1;
             this.lbAdottCh.Text = "Adott mennyiség: ";
             // 
             // btStartCH2
             // 
-            this.btStartCH2.Location = new System.Drawing.Point(438, 43);
+            this.btStartCH2.BackColor = System.Drawing.Color.LimeGreen;
+            this.btStartCH2.Location = new System.Drawing.Point(295, 74);
             this.btStartCH2.Name = "btStartCH2";
-            this.btStartCH2.Size = new System.Drawing.Size(75, 54);
+            this.btStartCH2.Size = new System.Drawing.Size(92, 52);
             this.btStartCH2.TabIndex = 0;
             this.btStartCH2.Text = "Start";
-            this.btStartCH2.UseVisualStyleBackColor = true;
+            this.btStartCH2.UseVisualStyleBackColor = false;
+            this.btStartCH2.Click += new System.EventHandler(this.btStartCH2_Click);
             // 
             // lb1ch
             // 
             this.lb1ch.AutoSize = true;
+            this.lb1ch.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb1ch.Location = new System.Drawing.Point(44, 130);
             this.lb1ch.Name = "lb1ch";
-            this.lb1ch.Size = new System.Drawing.Size(47, 13);
+            this.lb1ch.Size = new System.Drawing.Size(64, 15);
             this.lb1ch.TabIndex = 0;
             this.lb1ch.Text = "1 gramm";
             // 
             // lb100ch
             // 
             this.lb100ch.AutoSize = true;
+            this.lb100ch.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb100ch.Location = new System.Drawing.Point(380, 130);
             this.lb100ch.Name = "lb100ch";
-            this.lb100ch.Size = new System.Drawing.Size(59, 13);
+            this.lb100ch.Size = new System.Drawing.Size(80, 15);
             this.lb100ch.TabIndex = 1;
             this.lb100ch.Text = "100 gramm";
             // 
             // lb10ch
             // 
             this.lb10ch.AutoSize = true;
-            this.lb10ch.Location = new System.Drawing.Point(223, 130);
+            this.lb10ch.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb10ch.Location = new System.Drawing.Point(206, 148);
             this.lb10ch.Name = "lb10ch";
-            this.lb10ch.Size = new System.Drawing.Size(53, 13);
+            this.lb10ch.Size = new System.Drawing.Size(72, 15);
             this.lb10ch.TabIndex = 2;
             this.lb10ch.Text = "10 gramm";
             // 
-            // tbCh
+            // tbCaloriaCH
             // 
-            this.tbCh.Location = new System.Drawing.Point(21, 73);
-            this.tbCh.Name = "tbCh";
-            this.tbCh.Size = new System.Drawing.Size(100, 20);
-            this.tbCh.TabIndex = 4;
-            this.tbCh.TextChanged += new System.EventHandler(this.tbCh_TextChanged);
-            this.tbCh.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbCh_KeyPress);
+            this.tbCaloriaCH.Location = new System.Drawing.Point(21, 73);
+            this.tbCaloriaCH.Name = "tbCaloriaCH";
+            this.tbCaloriaCH.Size = new System.Drawing.Size(100, 20);
+            this.tbCaloriaCH.TabIndex = 4;
+            this.tbCaloriaCH.TextChanged += new System.EventHandler(this.tbCh_TextChanged);
+            this.tbCaloriaCH.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbCaloriaCH_KeyPress);
             // 
             // tbGrammCh
             // 
@@ -182,10 +192,10 @@
             // 
             // tb10gCH
             // 
-            this.tb10gCH.Location = new System.Drawing.Point(199, 182);
+            this.tb10gCH.Location = new System.Drawing.Point(192, 182);
             this.tb10gCH.Name = "tb10gCH";
             this.tb10gCH.ReadOnly = true;
-            this.tb10gCH.Size = new System.Drawing.Size(100, 20);
+            this.tb10gCH.Size = new System.Drawing.Size(107, 20);
             this.tb10gCH.TabIndex = 6;
             // 
             // tb100gCh
@@ -206,24 +216,27 @@
             // 
             // btResetCh
             // 
-            this.btResetCh.Location = new System.Drawing.Point(461, 12);
+            this.btResetCh.BackColor = System.Drawing.Color.Coral;
+            this.btResetCh.Location = new System.Drawing.Point(0, -1);
             this.btResetCh.Name = "btResetCh";
             this.btResetCh.Size = new System.Drawing.Size(75, 23);
             this.btResetCh.TabIndex = 9;
             this.btResetCh.Text = "Reset";
-            this.btResetCh.UseVisualStyleBackColor = true;
+            this.btResetCh.UseVisualStyleBackColor = false;
+            this.btResetCh.Click += new System.EventHandler(this.btResetCh_Click);
             // 
             // CHForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(548, 385);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(477, 385);
             this.Controls.Add(this.btResetCh);
             this.Controls.Add(this.tb1gCH);
             this.Controls.Add(this.tb100gCh);
             this.Controls.Add(this.tb10gCH);
             this.Controls.Add(this.tbGrammCh);
-            this.Controls.Add(this.tbCh);
+            this.Controls.Add(this.tbCaloriaCH);
             this.Controls.Add(this.lb100ch);
             this.Controls.Add(this.lb10ch);
             this.Controls.Add(this.gbCH);
@@ -256,7 +269,7 @@
         private System.Windows.Forms.Label lb1ch;
         private System.Windows.Forms.Label lb100ch;
         private System.Windows.Forms.Label lb10ch;
-        private System.Windows.Forms.TextBox tbCh;
+        private System.Windows.Forms.TextBox tbCaloriaCH;
         private System.Windows.Forms.TextBox tbRandomChgramm;
         private System.Windows.Forms.TextBox tbRandomCh;
         private System.Windows.Forms.TextBox tbGrammCh;

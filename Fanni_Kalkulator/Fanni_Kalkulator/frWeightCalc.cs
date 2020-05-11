@@ -96,7 +96,7 @@ namespace Fanni_Kalkulator
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-+
+
 
             value = comboBox1.SelectedIndex.ToString();
             number = int.Parse(value);

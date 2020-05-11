@@ -20,6 +20,7 @@ namespace Fanni_Kalkulator
         String tbReadRandomCh1;
         float tbReadRandomFloatCh;
         float GrammCHResult;
+        float tbRandomValue;
         public CHForm()
         {
             InitializeComponent();
@@ -31,12 +32,12 @@ namespace Fanni_Kalkulator
         {
             try
             {
-                tbReadCh = tbCh.Text;
+                tbReadCh = tbCaloriaCH.Text;
                 tbReadFloatCh = float.Parse(tbReadCh);
             }
             catch (Exception ex)
             {
-                if (tbCh.Text=="")
+                if (tbCaloriaCH.Text=="")
                 {
 
                 }
@@ -45,20 +46,11 @@ namespace Fanni_Kalkulator
             }
         }
 
-        private void tbCh_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.')
-            {
-                e.Handled = true;
-            }
-        }
+     
 
         private void tbGrammCh_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.')
-            {
-                e.Handled = true;
-            }
+            
         }
 
         private void tbRandomCh_KeyPress(object sender, KeyPressEventArgs e)
@@ -78,7 +70,7 @@ namespace Fanni_Kalkulator
             }
             catch (Exception ex)
             {
-                if (tbCh.Text == "")
+                if (tbGrammCh.Text == "")
                 {
 
                 }
@@ -107,11 +99,39 @@ namespace Fanni_Kalkulator
 
         private void btStartCh1_Click(object sender, EventArgs e)
         {
-            GrammCHResult= (tbReadRandomFloatCh / tbReadFloatgCh);
-            Console.WriteLine(tbReadRandomFloatCh);
-            Console.WriteLine(tbReadFloatgCh);
-            Console.WriteLine(GrammCHResult);
+            
+            GrammCHResult= (tbReadFloatCh / tbReadFloatgCh);
+                     
             tb1gCH.Text = GrammCHResult.ToString();
+            tb10gCH.Text = (GrammCHResult * 10).ToString();
+            tb100gCh.Text = (GrammCHResult * 100).ToString();
+        }
+
+
+        private void tbCaloriaCH_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void btStartCH2_Click(object sender, EventArgs e)
+        {
+
+            tbRandomValue = tbReadRandomFloatCh * GrammCHResult;
+             tbRandomChgramm.Text = tbRandomValue.ToString();
+        }
+
+        private void btResetCh_Click(object sender, EventArgs e)
+        {
+            tbRandomCh.ResetText();
+            tbRandomChgramm.ResetText();
+            tbCaloriaCH.ResetText();
+            tbGrammCh.ResetText();
+            tb1gCH.Clear();
+            tb100gCh.Clear();
+            tb10gCH.Clear();
         }
     }
 }
